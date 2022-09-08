@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "BebasNeue-light";
+    src: url(../fonts/BebasNeue-Book.ttf) format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "BebasNeue-regular";
+    src: url(../fonts/BebasNeue-Regular.ttf) format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GeneralSans-medium";
+    src: url(../fonts/GeneralSans-Medium.ttf) format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GeneralSans-light";
+    src: url(../fonts/GeneralSans-Extralight.ttf) format("truetype");
+    font-style: normal;
+    font-display: swap;
+}

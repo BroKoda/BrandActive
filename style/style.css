@@ -1,0 +1,302 @@
+body {
+    /*font-family: "BebasNeue", Arial, Verdana, Tahoma, sans-serif;*/
+    background: #FFFFFF;
+    font-size: 16px;
+    font-family: "GeneralSans-light", Arial, Verdana, Tahoma, sans-serif;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+h1 {
+    font-family: "BebasNeue-light", Arial, Verdana, Tahoma, sans-serif;
+    letter-spacing: 10px;
+    line-height: 1;
+}
+
+h2 {
+    font-family: "BebasNeue-light", Arial, Verdana, Tahoma, sans-serif;
+    letter-spacing: 5px;
+    line-height: 1;
+}
+
+h3 {
+    font-family: "BebasNeue-regular", Arial, Verdana, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+hr.wide {
+    height: 3px;
+    background: #040403;
+    opacity: 1;
+}
+
+hr.thin {
+    height: 1px;
+    background: #040403;
+    opacity: 1;
+}
+
+.black-background {
+    background: #040403;
+}
+
+.main-header {
+    height: 80px;
+    position: relative;
+}
+
+.main-header img {
+    height: 60px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+    object-position: left center;
+    position: relative;
+}
+
+.main-banner {
+    padding: 0;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-banner img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.page-title{
+    position: relative;
+}
+
+.page-title .page-title-quote {
+    font-family: "GeneralSans-medium", Arial, Verdana, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+.services-block {
+    position: relative;
+}
+
+.services-block .service-container {
+    position: relative;
+    border-right: 2px solid white;
+    overflow: hidden;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    /*-webkit-box-shadow: inset -30px 0px 17px -30px #000000;*/
+    /*box-shadow: inset -30px 0px 17px -30px #000000;*/
+}
+
+.services-block .service-container img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.services-block .service-container .service-container-shadow {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    transform: translate(20px, -50%);
+    -webkit-box-shadow: 0px 0px 30px 30px #000000;
+    box-shadow: 0px 0px 30px 30px #000000;
+    border-radius: 50%;
+    opacity: 0.15;
+    display: block;
+}
+
+.about-us-block {
+    position: relative;
+}
+
+.about-us-block .about-us-container {
+    /*border: 2px solid white;*/
+    border-radius: 50px;
+    background: #909090;
+}
+
+.about-us-block .about-us-container .about-us-title {
+    color: white;
+}
+
+.about-us-block .about-us-container .about-us-details {
+    color: white;
+}
+
+.about-us-block .about-us-button {
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    font-family: "BebasNeue-regular", Arial, Verdana, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    border-radius: 30px;
+    border: 1px solid white;
+    text-decoration: none;
+    display: block;
+    transition: 0.5s ease-out all;
+}
+
+.about-us-block .about-us-button:hover {
+    background: white;
+    color: #040403;
+}
+
+.artworks-block {
+    position: relative;
+}
+
+.artworks-block .artworks-title {
+    color: white;
+}
+
+.artworks-block .artworks-img-container,
+.artworks-block .artworks-img-container-wide {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.artworks-block .artworks-img-container {
+    height: 500px;
+}
+.artworks-block .artworks-img-container-wide {
+    height: 700px;
+}
+
+.artworks-block .artworks-img-container .artworks-img,
+.artworks-block .artworks-img-container-wide .artworks-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.offer-block {
+    position: relative;
+    background: #e3e3e3;
+}
+
+.offer-block .offer-main-details {
+    font-size: 20px;
+}
+
+.offer-block .offer-main-sub-element {
+    margin-bottom: 5px;
+}
+
+.offer-block .offer-main-sub-element i {
+    font-size: 15px;
+    margin-right: 8px;
+}
+
+.offer-block .offer-details-image {
+    width: 50px;
+    height: 50px;
+    display: block;
+    object-fit: cover;
+    margin: 0 auto 10px auto;
+}
+
+.contact-block {
+    position: relative;
+}
+
+.contact-block input, .contact-block textarea {
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-color: #303030;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    margin-bottom: 15px;
+}
+
+.contact-block input[type="submit"] {
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    font-family: "BebasNeue-regular", Arial, Verdana, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    color: #040403;
+    border-radius: 30px;
+    border: 1px solid #040403;
+    text-decoration: none;
+    display: block;
+    background: transparent;
+    transition: 0.5s ease-out all;
+}
+
+.contact-block input[type="submit"]:hover {
+    background: #040403;
+    color: white;
+}
+
+.copyright-block {
+    position: relative;
+    height: 50px;
+}
+
+.copyright-block .copyright-text {
+    font-size: 12px;
+    color: white;
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+    h1 { font-size: 60px; letter-spacing: 2px; }
+
+    h2 { font-size: 40px; }
+
+    h3 { font-size: 25px; }
+
+    .services-block .service-container {
+        height: 250px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    h1 { font-size: 70px; }
+
+    h2 { font-size: 50px; }
+
+    h3 { font-size: 25px; }
+
+    .services-block .service-container {
+        height: 300px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .services-block .service-container {
+        height: 400px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
