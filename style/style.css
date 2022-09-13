@@ -49,7 +49,7 @@ hr.thin {
 }
 
 .main-header img {
-    height: 60px;
+    height: 40px;
     width: auto;
     display: block;
     object-fit: contain;
@@ -167,21 +167,18 @@ hr.thin {
 }
 
 .artworks-block .artworks-img-container,
-.artworks-block .artworks-img-container-wide {
+.artworks-block .artworks-img-container-wide,
+.artworks-block .artworks-img-container-double,
+.artworks-block .artworks-img-container-half {
     position: relative;
     overflow: hidden;
     width: 100%;
 }
 
-.artworks-block .artworks-img-container {
-    height: 500px;
-}
-.artworks-block .artworks-img-container-wide {
-    height: 700px;
-}
-
 .artworks-block .artworks-img-container .artworks-img,
-.artworks-block .artworks-img-container-wide .artworks-img {
+.artworks-block .artworks-img-container-wide .artworks-img,
+.artworks-block .artworks-img-container-double .artworks-img,
+.artworks-block .artworks-img-container-half .artworks-img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -273,6 +270,12 @@ hr.thin {
     .services-block .service-container {
         height: 250px;
     }
+
+    .artworks-block .artworks-img-container { height: 400px; }
+    .artworks-block .artworks-img-container-wide { height: 400px; }
+    .artworks-block .artworks-img-container-narrow { height: 600px; }
+    .artworks-block .artworks-img-container-double { height: 400px; }
+    .artworks-block .artworks-img-container-half { height: 300px; }
 }
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
@@ -286,6 +289,12 @@ hr.thin {
     .services-block .service-container {
         height: 300px;
     }
+
+    .artworks-block .artworks-img-container { height: 400px; }
+    .artworks-block .artworks-img-container-wide { height: 400px; }
+    .artworks-block .artworks-img-container-narrow { height: 600px; }
+    .artworks-block .artworks-img-container-double { height: 400px; }
+    .artworks-block .artworks-img-container-half { height: 300px; }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -296,7 +305,27 @@ hr.thin {
     .services-block .service-container {
         height: 400px;
     }
+
+    .artworks-block .artworks-img-container { height: 450px; }
+    .artworks-block .artworks-img-container-narrow { height: 450px; }
+    .artworks-block .artworks-img-container-wide { height: 700px; }
+    .artworks-block .artworks-img-container-double { height: 450px; }
+    .artworks-block .artworks-img-container-half { height: 213px; }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .artworks-block .artworks-img-container { height: 500px; }
+    .artworks-block .artworks-img-container-narrow { height: 500px; }
+    .artworks-block .artworks-img-container-wide { height: 700px; }
+    .artworks-block .artworks-img-container-double { height: 550px; }
+    .artworks-block .artworks-img-container-half { height: 263px; }
+}
+
+@media only screen and (min-width: 1400px) {
+    .artworks-block .artworks-img-container { height: 600px; }
+    .artworks-block .artworks-img-container-narrow { height: 600px; }
+    .artworks-block .artworks-img-container-wide { height: 800px; }
+    .artworks-block .artworks-img-container-double { height: 650px; }
+    .artworks-block .artworks-img-container-half { height: 313px; }
+}
