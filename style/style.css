@@ -1,8 +1,10 @@
+/* BASICS */
 body {
     /*font-family: "BebasNeue", Arial, Verdana, Tahoma, sans-serif;*/
     background: #FFFFFF;
     font-size: 16px;
     font-family: "GeneralSans-light", Arial, Verdana, Tahoma, sans-serif;
+    scroll-behavior: smooth;
 }
 
 p {
@@ -43,6 +45,90 @@ hr.thin {
     background: #040403;
 }
 
+
+
+/* ---------- ---------- FORM ---------- ---------- */
+form {
+    position: relative;
+}
+
+form input, form textarea {
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-color: #303030;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    margin-bottom: 15px;
+    background: transparent;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    font-family: "BebasNeue-regular", Arial, Verdana, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    color: #040403;
+    border-radius: 30px;
+    border: 1px solid #040403;
+    text-decoration: none;
+    display: block;
+    background: transparent;
+    transition: 0.5s ease-out all;
+}
+
+form input[type="submit"]:hover {
+    background: #040403;
+    color: white;
+}
+
+
+/* ---------- ---------- CHECKBOX ---------- ---------- */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    margin-top: 5px;
+    background-color: #e3e3e3;
+    border-radius: 3px;
+    border: 1px solid #040403;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #909090;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #040403;
+}
+
+
+
+
 .main-header {
     height: 80px;
     position: relative;
@@ -59,7 +145,7 @@ hr.thin {
 
 .main-banner {
     padding: 0;
-    height: 400px;
+    height: 450px;
     position: relative;
     overflow: hidden;
 }
@@ -214,41 +300,6 @@ hr.thin {
     margin: 0 auto 10px auto;
 }
 
-.contact-block {
-    position: relative;
-}
-
-.contact-block input, .contact-block textarea {
-    display: block;
-    width: 100%;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    border-color: #303030;
-    border-width: 0 0 1px 0;
-    border-style: solid;
-    margin-bottom: 15px;
-}
-
-.contact-block input[type="submit"] {
-    width: 100%;
-    padding: 5px 0;
-    text-align: center;
-    font-family: "BebasNeue-regular", Arial, Verdana, Tahoma, sans-serif;
-    letter-spacing: 1px;
-    color: #040403;
-    border-radius: 30px;
-    border: 1px solid #040403;
-    text-decoration: none;
-    display: block;
-    background: transparent;
-    transition: 0.5s ease-out all;
-}
-
-.contact-block input[type="submit"]:hover {
-    background: #040403;
-    color: white;
-}
-
 .copyright-block {
     position: relative;
     height: 50px;
@@ -261,10 +312,8 @@ hr.thin {
 
 /* Extra small devices (phones, 576px and down) */
 @media only screen and (max-width: 576px) {
-    h1 { font-size: 60px; letter-spacing: 2px; }
-
-    h2 { font-size: 40px; }
-
+    h1 { font-size: 55px; letter-spacing: 2px; }
+    h2 { font-size: 35px; }
     h3 { font-size: 25px; }
 
     .services-block .service-container {
@@ -280,10 +329,8 @@ hr.thin {
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
-    h1 { font-size: 70px; }
-
-    h2 { font-size: 50px; }
-
+    h1 { font-size: 60px; }
+    h2 { font-size: 45px; }
     h3 { font-size: 25px; }
 
     .services-block .service-container {
