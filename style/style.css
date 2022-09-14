@@ -171,6 +171,25 @@ form input[type="submit"]:hover {
     font-size: 25px;
 }
 
+.page-title .page-title-decoration-left {
+    position: absolute;
+    width: auto;
+    height: 120px;
+}
+.page-title .page-title-decoration-right {
+    position: absolute;
+    width: auto;
+    height: 120px;
+}
+
+.page-title .page-title-decoration-left img,
+.page-title .page-title-decoration-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
 
 /* ---------- ---------- SERVICES ---------- ---------- */
 .services-block {
@@ -347,6 +366,16 @@ form input[type="submit"]:hover {
     h2 { font-size: 45px; }
     h3 { font-size: 25px; }
 
+    .page-title .page-title-decoration-left {
+        top: 75px;
+        left: 0;
+    }
+
+    .page-title .page-title-decoration-right {
+        bottom: 100px;
+        right: -5%;
+    }
+
     .services-block .service-container {
         height: 300px;
     }
@@ -359,10 +388,30 @@ form input[type="submit"]:hover {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .page-title .page-title-decoration-left {
+        top: 75px;
+        left: 0;
+    }
+
+    .page-title .page-title-decoration-right {
+        bottom: 100px;
+        right: 0;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .page-title .page-title-decoration-left {
+        top: 75px;
+        left: 10%;
+    }
+
+    .page-title .page-title-decoration-right {
+        bottom: 80px;
+        right: 10%;
+    }
+
     .services-block .service-container {
         height: 400px;
     }
@@ -376,6 +425,16 @@ form input[type="submit"]:hover {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    .page-title .page-title-decoration-left {
+        top: 75px;
+        left: 15%;
+    }
+
+    .page-title .page-title-decoration-right {
+        bottom: 90px;
+        right: 10%;
+    }
+
     .artworks-block .artworks-img-container { height: 500px; }
     .artworks-block .artworks-img-container-narrow { height: 500px; }
     .artworks-block .artworks-img-container-wide { height: 700px; }
@@ -384,6 +443,16 @@ form input[type="submit"]:hover {
 }
 
 @media only screen and (min-width: 1400px) {
+    .page-title .page-title-decoration-left {
+        top: 75px;
+        left: 20%;
+    }
+
+    .page-title .page-title-decoration-right {
+        bottom: 80px;
+        right: 10%;
+    }
+
     .artworks-block .artworks-img-container { height: 600px; }
     .artworks-block .artworks-img-container-narrow { height: 600px; }
     .artworks-block .artworks-img-container-wide { height: 800px; }
