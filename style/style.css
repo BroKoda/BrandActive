@@ -128,7 +128,7 @@ form input[type="submit"]:hover {
 
 
 
-
+/* ---------- ---------- HEADER ---------- ---------- */
 .main-header {
     height: 80px;
     position: relative;
@@ -160,6 +160,8 @@ form input[type="submit"]:hover {
     object-fit: cover;
 }
 
+
+/* ---------- ---------- PAGE TITLE ---------- ---------- */
 .page-title{
     position: relative;
 }
@@ -169,6 +171,8 @@ form input[type="submit"]:hover {
     font-size: 25px;
 }
 
+
+/* ---------- ---------- SERVICES ---------- ---------- */
 .services-block {
     position: relative;
 }
@@ -207,12 +211,13 @@ form input[type="submit"]:hover {
     display: block;
 }
 
+
+/* ---------- ---------- ABOUT US ---------- ---------- */
 .about-us-block {
     position: relative;
 }
 
 .about-us-block .about-us-container {
-    /*border: 2px solid white;*/
     border-radius: 50px;
     background: #909090;
 }
@@ -244,6 +249,8 @@ form input[type="submit"]:hover {
     color: #040403;
 }
 
+
+/* ---------- ---------- ARTWORKS ---------- ---------- */
 .artworks-block {
     position: relative;
 }
@@ -274,6 +281,9 @@ form input[type="submit"]:hover {
     transform: translate(-50%, -50%);
 }
 
+
+
+/* ---------- ---------- OFFER ---------- ---------- */
 .offer-block {
     position: relative;
     background: #e3e3e3;
@@ -300,6 +310,8 @@ form input[type="submit"]:hover {
     margin: 0 auto 10px auto;
 }
 
+
+/* ---------- ---------- COPYRIGHT ---------- ---------- */
 .copyright-block {
     position: relative;
     height: 50px;
@@ -310,6 +322,8 @@ form input[type="submit"]:hover {
     color: white;
 }
 
+
+/* ---------- ---------- MEDIA ---------- ---------- */
 /* Extra small devices (phones, 576px and down) */
 @media only screen and (max-width: 576px) {
     h1 { font-size: 55px; letter-spacing: 2px; }
