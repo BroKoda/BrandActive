@@ -353,11 +353,11 @@ form input[type="submit"]:hover {
         height: 250px;
     }
 
-    .artworks-block .artworks-img-container { height: 400px; }
-    .artworks-block .artworks-img-container-wide { height: 400px; }
-    .artworks-block .artworks-img-container-narrow { height: 600px; }
-    .artworks-block .artworks-img-container-double { height: 400px; }
-    .artworks-block .artworks-img-container-half { height: 300px; }
+    .artworks-block .artworks-img-container { height: 165px; }
+    .artworks-block .artworks-img-container-wide { height: 250px; }
+    .artworks-block .artworks-img-container-narrow { height: 165px; }
+    .artworks-block .artworks-img-container-double { height: 180px; }
+    .artworks-block .artworks-img-container-half { height: 78px; }
 }
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
@@ -380,11 +380,11 @@ form input[type="submit"]:hover {
         height: 300px;
     }
 
-    .artworks-block .artworks-img-container { height: 400px; }
+    .artworks-block .artworks-img-container { height: 230px; }
     .artworks-block .artworks-img-container-wide { height: 400px; }
-    .artworks-block .artworks-img-container-narrow { height: 600px; }
-    .artworks-block .artworks-img-container-double { height: 400px; }
-    .artworks-block .artworks-img-container-half { height: 300px; }
+    .artworks-block .artworks-img-container-narrow { height: 230px; }
+    .artworks-block .artworks-img-container-double { height: 250px; }
+    .artworks-block .artworks-img-container-half { height: 113px; }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -398,6 +398,12 @@ form input[type="submit"]:hover {
         bottom: 100px;
         right: 0;
     }
+
+    .artworks-block .artworks-img-container { height: 300px; }
+    .artworks-block .artworks-img-container-wide { height: 500px; }
+    .artworks-block .artworks-img-container-narrow { height: 300px; }
+    .artworks-block .artworks-img-container-double { height: 350px; }
+    .artworks-block .artworks-img-container-half { height: 163px; }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
