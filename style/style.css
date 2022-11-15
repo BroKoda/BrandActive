@@ -1,4 +1,8 @@
 /* BASICS */
+html {
+    overflow-x: hidden;
+}
+
 body {
     /*font-family: "BebasNeue", Arial, Verdana, Tahoma, sans-serif;*/
     background: #FFFFFF;
