@@ -12,15 +12,17 @@ p {
 }
 
 h1 {
-    font-family: "BebasNeue-light", Arial, Verdana, Tahoma, sans-serif;
+    font-family: "IBM-PLex-bold", Arial, Verdana, Tahoma, sans-serif;
     letter-spacing: 10px;
     line-height: 1;
+    text-transform: uppercase;
 }
 
 h2 {
-    font-family: "BebasNeue-light", Arial, Verdana, Tahoma, sans-serif;
+    font-family: "IBM-PLex-bold", Arial, Verdana, Tahoma, sans-serif;
     letter-spacing: 5px;
     line-height: 1;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -46,7 +48,6 @@ hr.thin {
 }
 
 
-
 /* ---------- ---------- FORM ---------- ---------- */
 form {
     position: relative;
@@ -55,10 +56,10 @@ form {
 form input, form textarea {
     display: block;
     width: 100%;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding: 5px 10px;
     border-color: #303030;
-    border-width: 0 0 1px 0;
+    border-width: 1px;
+    border-radius: 5px;
     border-style: solid;
     margin-bottom: 15px;
     background: transparent;
@@ -113,7 +114,7 @@ form input[type="submit"]:hover {
     height: 15px;
     width: 15px;
     margin-top: 5px;
-    background-color: #e3e3e3;
+    background-color: white;
     border-radius: 3px;
     border: 1px solid #040403;
 }
@@ -127,15 +128,16 @@ form input[type="submit"]:hover {
 }
 
 
-
 /* ---------- ---------- HEADER ---------- ---------- */
 .main-header {
     height: 80px;
     position: relative;
+    background-color: transparent;
+    z-index: 1;
 }
 
 .main-header img {
-    height: 40px;
+    height: 50px;
     width: auto;
     display: block;
     object-fit: contain;
@@ -145,9 +147,52 @@ form input[type="submit"]:hover {
 
 .main-banner {
     padding: 0;
-    height: 450px;
+    margin-top: -80px;
+    height: 700px;
     position: relative;
     overflow: hidden;
+    background-color: #000000;
+    z-index: 0;
+}
+
+.main-banner h1,
+.main-banner h2 {
+    color: white;
+    text-transform: uppercase;
+    opacity: 1;
+    font-weight: 900;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.main-banner h1 {
+    margin-top: 50px;
+    font-family: "IBM-PLex-bold", Arial, Verdana, Tahoma, sans-serif;
+}
+
+.main-banner h2 {
+    font-family: "IBM-PLex-extrailght", Arial, Verdana, Tahoma, sans-serif;
+}
+
+.main-banner .main-banner-button {
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    font-family: "BebasNeue-regular", Arial, Verdana, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    border-radius: 30px;
+    border: 1px solid white;
+    text-decoration: none;
+    display: block;
+    transition: 0.5s ease-out all;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.main-banner .main-banner-button:hover {
+    background: white;
+    color: #040403;
 }
 
 .main-banner img {
@@ -156,13 +201,63 @@ form input[type="submit"]:hover {
     left: 50%;
     width: 100%;
     height: 100%;
+    padding: 10px 0 150px 0;
     transform: translate(-50%, -50%);
-    object-fit: cover;
+    object-fit: contain;
+    filter: opacity(0.3);
+    z-index: -1;
+}
+
+.main-banner-social-links-container {
+    position: relative;
+    margin-top: -120px;
+    display: flex;
+}
+
+.main-banner-social-links {
+    margin-left: 10px;
+}
+
+.main-banner-social-links .social-link-box {
+    background: white;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transition: 0.5s ease-out all;
+}
+
+.main-banner-social-links .social-link-box i {
+    width: 25px;
+    height: 25px;
+    display: block;
+    font-size: 25px;
+    line-height: 1;
+    text-align: center;
+    color: #040403;
+}
+
+.main-banner-social-links .social-link-box:hover {
+    background: transparent;
+}
+
+.main-banner-social-links .social-link-box:hover i {
+    color: white;
 }
 
 
 /* ---------- ---------- PAGE TITLE ---------- ---------- */
-.page-title{
+.page-title-white-block {
+    margin-top: -60px;
+    background: white;
+    z-index: 1;
+}
+
+.page-title {
     position: relative;
 }
 
@@ -176,6 +271,7 @@ form input[type="submit"]:hover {
     width: auto;
     height: 120px;
 }
+
 .page-title .page-title-decoration-right {
     position: absolute;
     width: auto;
@@ -183,7 +279,7 @@ form input[type="submit"]:hover {
 }
 
 .page-title .page-title-decoration-left img,
-.page-title .page-title-decoration-right img{
+.page-title .page-title-decoration-right img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -194,6 +290,55 @@ form input[type="submit"]:hover {
 /* ---------- ---------- SERVICES ---------- ---------- */
 .services-block {
     position: relative;
+}
+
+.services-block .service-shapes-container {
+    position: relative;
+}
+
+.services-block .service-shapes-container .service-shape {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services-block .service-shapes-container .service-shape svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    width: 130px;
+    height: 130px;
+    z-index: -1;
+}
+
+.services-block .service-shapes-container .service-shape img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.services-block .service-shapes-container .service-shape p {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+.services-block .service-shapes-container .service-shape-brand {}
+.services-block .service-shapes-container .service-shape-graphic {
+    margin-left: -210px;
+    margin-top: -30px;
+}
+.services-block .service-shapes-container .service-shape-social {
+    margin-right: -210px;
+    margin-top: -95px;
+}
+.services-block .service-shapes-container .service-shape-ad {
+    margin-top: -20px;
 }
 
 .services-block .service-container {
@@ -231,50 +376,27 @@ form input[type="submit"]:hover {
 }
 
 
-/* ---------- ---------- ABOUT US ---------- ---------- */
-.about-us-block {
-    position: relative;
-}
-
-.about-us-block .about-us-container {
-    border-radius: 50px;
-    background: #909090;
-}
-
-.about-us-block .about-us-container .about-us-title {
-    color: white;
-}
-
-.about-us-block .about-us-container .about-us-details {
-    color: white;
-}
-
-.about-us-block .about-us-button {
-    width: 100%;
-    padding: 5px 0;
-    text-align: center;
-    font-family: "BebasNeue-regular", Arial, Verdana, Tahoma, sans-serif;
-    letter-spacing: 1px;
-    color: white;
-    border-radius: 30px;
-    border: 1px solid white;
-    text-decoration: none;
-    display: block;
-    transition: 0.5s ease-out all;
-}
-
-.about-us-block .about-us-button:hover {
-    background: white;
-    color: #040403;
-}
-
-
 /* ---------- ---------- ARTWORKS ---------- ---------- */
 .artworks-block {
     position: relative;
 }
 
-.artworks-block .artworks-title {
+.artworks-block .artworks-title-left {
+    background: white;
+}
+
+.artworks-block .artworks-title-left img {
+    max-width: 100%;
+    max-height: 500px;
+    height: auto;
+}
+
+.artworks-block .artworks-title-right {
+    height: 100%;
+    background: #040403;
+}
+
+.artworks-block .artworks-title-right h1 {
     color: white;
 }
 
@@ -301,33 +423,68 @@ form input[type="submit"]:hover {
 }
 
 
-
 /* ---------- ---------- OFFER ---------- ---------- */
 .offer-block {
     position: relative;
-    background: #e3e3e3;
+    background: #040403;
+    overflow: hidden;
 }
 
-.offer-block .offer-main-details {
+.offer-block-details-text-block {
+    background: transparent;
+}
+
+.offer-block-details-form-block {
+    background: white;
+    position: relative;
+}
+
+.offer-block-details-form-block:before {
+    content: '';
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5000px;
+    display: block;
+}
+
+.offer-block .offer-block-details-form-block h3 {
+    font-family: "GeneralSans-medium", Arial, Verdana, Tahoma, sans-serif;
     font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
-.offer-block .offer-main-sub-element {
-    margin-bottom: 5px;
+.offer-block .offer-block-details-form-block .checkbox-container {
+    margin-bottom: 10px;
 }
 
-.offer-block .offer-main-sub-element i {
-    font-size: 15px;
-    margin-right: 8px;
-}
-
-.offer-block .offer-details-image {
+.offer-block .offer-block-details-text-block .offer-details-image {
     width: 50px;
     height: 50px;
     display: block;
     object-fit: cover;
     margin: 0 auto 10px auto;
 }
+
+.offer-block .offer-block-details-text-block .offer-details {
+    color: white;
+}
+
+/*.offer-block .offer-main-details {*/
+/*    font-size: 20px;*/
+/*}*/
+
+/*.offer-block .offer-main-sub-element {*/
+/*    margin-bottom: 5px;*/
+/*}*/
+
+/*.offer-block .offer-main-sub-element i {*/
+/*    font-size: 15px;*/
+/*    margin-right: 8px;*/
+/*}*/
 
 
 /* ---------- ---------- COPYRIGHT ---------- ---------- */
@@ -345,26 +502,85 @@ form input[type="submit"]:hover {
 /* ---------- ---------- MEDIA ---------- ---------- */
 /* Extra small devices (phones, 576px and down) */
 @media only screen and (max-width: 576px) {
-    h1 { font-size: 55px; letter-spacing: 2px; }
-    h2 { font-size: 35px; }
-    h3 { font-size: 25px; }
+    h1 {
+        font-size: 55px;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
 
     .services-block .service-container {
         height: 250px;
     }
 
-    .artworks-block .artworks-img-container { height: 165px; }
-    .artworks-block .artworks-img-container-wide { height: 250px; }
-    .artworks-block .artworks-img-container-narrow { height: 165px; }
-    .artworks-block .artworks-img-container-double { height: 180px; }
-    .artworks-block .artworks-img-container-half { height: 78px; }
+    .artworks-block .artworks-img-container {
+        height: 165px;
+    }
+
+    .artworks-block .artworks-img-container-wide {
+        height: 250px;
+    }
+
+    .artworks-block .artworks-img-container-narrow {
+        height: 165px;
+    }
+
+    .artworks-block .artworks-img-container-double {
+        height: 180px;
+    }
+
+    .artworks-block .artworks-img-container-half {
+        height: 78px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
-    h1 { font-size: 60px; }
-    h2 { font-size: 45px; }
-    h3 { font-size: 25px; }
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .services-block .service-shapes-container .service-shape svg {
+        width: 200px;
+        height: 200px;
+    }
+
+    .services-block .service-shapes-container .service-shape img {
+        width: 55px;
+        height: 55px;
+        margin-bottom: 10px;
+    }
+
+    .services-block .service-shapes-container .service-shape p {
+        font-size: 18px;
+    }
+
+    .services-block .service-shapes-container .service-shape-brand {}
+    .services-block .service-shapes-container .service-shape-graphic {
+        margin-left: -320px;
+        margin-top: -10px;
+    }
+    .services-block .service-shapes-container .service-shape-social {
+        margin-right: -320px;
+        margin-top: -120px;
+    }
+    .services-block .service-shapes-container .service-shape-ad {
+        margin-top: 0;
+    }
 
     .page-title .page-title-decoration-left {
         top: 75px;
@@ -380,11 +596,25 @@ form input[type="submit"]:hover {
         height: 300px;
     }
 
-    .artworks-block .artworks-img-container { height: 230px; }
-    .artworks-block .artworks-img-container-wide { height: 400px; }
-    .artworks-block .artworks-img-container-narrow { height: 230px; }
-    .artworks-block .artworks-img-container-double { height: 250px; }
-    .artworks-block .artworks-img-container-half { height: 113px; }
+    .artworks-block .artworks-img-container {
+        height: 230px;
+    }
+
+    .artworks-block .artworks-img-container-wide {
+        height: 400px;
+    }
+
+    .artworks-block .artworks-img-container-narrow {
+        height: 230px;
+    }
+
+    .artworks-block .artworks-img-container-double {
+        height: 250px;
+    }
+
+    .artworks-block .artworks-img-container-half {
+        height: 113px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -399,15 +629,41 @@ form input[type="submit"]:hover {
         right: 0;
     }
 
-    .artworks-block .artworks-img-container { height: 300px; }
-    .artworks-block .artworks-img-container-wide { height: 500px; }
-    .artworks-block .artworks-img-container-narrow { height: 300px; }
-    .artworks-block .artworks-img-container-double { height: 350px; }
-    .artworks-block .artworks-img-container-half { height: 163px; }
+    .artworks-block .artworks-img-container {
+        height: 300px;
+    }
+
+    .artworks-block .artworks-img-container-wide {
+        height: 500px;
+    }
+
+    .artworks-block .artworks-img-container-narrow {
+        height: 300px;
+    }
+
+    .artworks-block .artworks-img-container-double {
+        height: 350px;
+    }
+
+    .artworks-block .artworks-img-container-half {
+        height: 163px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .main-banner {
+        height: 650px;
+    }
+
+    .main-banner img {
+        padding: 10px 0 100px;
+    }
+
+    .main-banner-social-links-container {
+        margin-top: -60px;
+    }
+
     .page-title .page-title-decoration-left {
         top: 75px;
         left: 10%;
@@ -422,11 +678,25 @@ form input[type="submit"]:hover {
         height: 400px;
     }
 
-    .artworks-block .artworks-img-container { height: 450px; }
-    .artworks-block .artworks-img-container-narrow { height: 450px; }
-    .artworks-block .artworks-img-container-wide { height: 700px; }
-    .artworks-block .artworks-img-container-double { height: 450px; }
-    .artworks-block .artworks-img-container-half { height: 213px; }
+    .artworks-block .artworks-img-container {
+        height: 450px;
+    }
+
+    .artworks-block .artworks-img-container-narrow {
+        height: 450px;
+    }
+
+    .artworks-block .artworks-img-container-wide {
+        height: 700px;
+    }
+
+    .artworks-block .artworks-img-container-double {
+        height: 450px;
+    }
+
+    .artworks-block .artworks-img-container-half {
+        height: 213px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -441,11 +711,25 @@ form input[type="submit"]:hover {
         right: 10%;
     }
 
-    .artworks-block .artworks-img-container { height: 500px; }
-    .artworks-block .artworks-img-container-narrow { height: 500px; }
-    .artworks-block .artworks-img-container-wide { height: 700px; }
-    .artworks-block .artworks-img-container-double { height: 550px; }
-    .artworks-block .artworks-img-container-half { height: 263px; }
+    .artworks-block .artworks-img-container {
+        height: 500px;
+    }
+
+    .artworks-block .artworks-img-container-narrow {
+        height: 500px;
+    }
+
+    .artworks-block .artworks-img-container-wide {
+        height: 700px;
+    }
+
+    .artworks-block .artworks-img-container-double {
+        height: 550px;
+    }
+
+    .artworks-block .artworks-img-container-half {
+        height: 263px;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -459,9 +743,23 @@ form input[type="submit"]:hover {
         right: 10%;
     }
 
-    .artworks-block .artworks-img-container { height: 600px; }
-    .artworks-block .artworks-img-container-narrow { height: 600px; }
-    .artworks-block .artworks-img-container-wide { height: 800px; }
-    .artworks-block .artworks-img-container-double { height: 650px; }
-    .artworks-block .artworks-img-container-half { height: 313px; }
+    .artworks-block .artworks-img-container {
+        height: 600px;
+    }
+
+    .artworks-block .artworks-img-container-narrow {
+        height: 600px;
+    }
+
+    .artworks-block .artworks-img-container-wide {
+        height: 800px;
+    }
+
+    .artworks-block .artworks-img-container-double {
+        height: 650px;
+    }
+
+    .artworks-block .artworks-img-container-half {
+        height: 313px;
+    }
 }
