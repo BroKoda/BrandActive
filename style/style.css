@@ -166,17 +166,20 @@ form input[type="submit"]:hover {
     text-transform: uppercase;
     opacity: 1;
     font-weight: 900;
-    margin-bottom: 20px;
     z-index: 1;
 }
 
 .main-banner h1 {
     margin-top: 50px;
     font-family: "IBM-PLex-bold", Arial, Verdana, Tahoma, sans-serif;
+    line-height: 1.1;
+    margin-bottom: 20px;
 }
 
 .main-banner h2 {
     font-family: "IBM-PLex-extrailght", Arial, Verdana, Tahoma, sans-serif;
+    line-height: 1.2;
+    margin-bottom: 25px;
 }
 
 .main-banner .main-banner-button {
@@ -342,7 +345,7 @@ form input[type="submit"]:hover {
     background: #040403;
 }
 
-.artworks-block .artworks-title-right h1 {
+.artworks-block .artworks-title-right h2 {
     color: white;
 }
 
@@ -442,6 +445,7 @@ form input[type="submit"]:hover {
 
     h2 {
         font-size: 35px;
+        letter-spacing: 0;
     }
 
     h3 {
