@@ -36,18 +36,6 @@ h3 {
     line-height: 1;
 }
 
-hr.wide {
-    height: 3px;
-    background: #040403;
-    opacity: 1;
-}
-
-hr.thin {
-    height: 1px;
-    background: #040403;
-    opacity: 1;
-}
-
 .black-background {
     background: #040403;
 }
